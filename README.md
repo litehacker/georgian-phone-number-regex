@@ -12,3 +12,10 @@ Valid inputs:
 - +995568000865
 - 568 000 000  
 - 568000000  
+
+Validation code sample:  
+```typescript
+export const validatePhoneNumber = (phone: string):boolean => {
+  return phone.match(/^(\+\d{3}\s?)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{3}$/);
+};
+```
